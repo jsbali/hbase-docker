@@ -1,7 +1,3 @@
-# This file intended to be sourced
-
-# . /build/config.sh
-
 # This is the definitive site and incredibly slow
 HBASE_DIST="http://archive.apache.org/dist/hbase"
 # This is a mirror site and faster but every new release breaks all
@@ -12,6 +8,8 @@ HBASE_DIST="http://archive.apache.org/dist/hbase"
 export INITRD=no
 export DEBIAN_FRONTEND=noninteractive
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+HBASE_VERSION="0.98.4"
+HBASE_TAR_NAME="hbase-0.98.4-hadoop2-bin.tar.gz"
 
 minimal_apt_get_args='-y --no-install-recommends'
 
